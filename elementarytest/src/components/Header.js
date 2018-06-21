@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Header.css';
 
 
 class Header extends Component {
@@ -6,7 +7,9 @@ class Header extends Component {
     jsUcfirst(string){
     return string.charAt(0).toUpperCase() + string.slice(1);
     }
-
+    
+    
+      
     constructor(){
         super();
         this.state = {
@@ -49,15 +52,10 @@ class Header extends Component {
 
     render() {
         return (
-
-            <div className="container2" >
-
-             <div className="container1" >
+             <div className="Header" >
+                <h1> Members  </h1>
                 {this.state.pictures}
             </div>
-
-            </div>
-
         );
     }
 }
